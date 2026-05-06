@@ -21,3 +21,17 @@ diary_set_motd() {
 }
 
 ROOTFS_POSTPROCESS_COMMAND += "diary_set_motd; "
+
+inherit extrausers
+
+PASSWD = "\$5\$1xmr2dX5TL/MVXqz\$WxDdLetJt5yvocmsTykxF.PVrTn8QWsTdsrBhdn1tUB"
+EXTRA_USERS_PARAMS = "\
+    useradd -p '${PASSWD}' student; \
+    usermod -a -G wheel student; \
+    "
+
+IMAGE_INSTALL:append = " sudo"
+
+
+
+
