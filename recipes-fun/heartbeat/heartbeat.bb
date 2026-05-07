@@ -1,6 +1,6 @@
 SUMMARY = "Simple heartbeat service"
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://files/common-licenses/MIT;md5=f199be05ebc4b8e133ae119bc88c6e88"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
 SRC_URI += "file://heartbeat.sh file://heartbeat.service"
 
