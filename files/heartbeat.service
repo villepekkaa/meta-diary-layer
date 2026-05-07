@@ -1,0 +1,10 @@
+[Unit]
+Description=Diary heartbeat
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/heartbeat.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
