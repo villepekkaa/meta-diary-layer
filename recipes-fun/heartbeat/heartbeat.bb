@@ -1,3 +1,7 @@
+SUMMARY = "Simple heartbeat service"
+LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://files/common-licenses/MIT;md5=f199be05ebc4b8e133ae119bc88c6e88"
+
 SRC_URI += "file://heartbeat.sh file://heartbeat.service"
 
 inherit systemd
