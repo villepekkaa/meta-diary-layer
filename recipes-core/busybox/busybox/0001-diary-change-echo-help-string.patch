@@ -1,0 +1,22 @@
+From 7d20a41b626e2e9ce752b36b504d0f4cdfdb8ff9 Mon Sep 17 00:00:00 2001
+From: villepekkaa <ville-pekka.alavuotunki@proton.me>
+Date: Fri, 8 May 2026 06:16:29 +0000
+Subject: [PATCH] diary: change echo help string
+Upstream-Status: Inappropriate [local change]
+---
+ coreutils/echo.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/coreutils/echo.c b/coreutils/echo.c
+index 44b2eb5..d5beea1 100644
+--- a/coreutils/echo.c
++++ b/coreutils/echo.c
+@@ -43,7 +43,7 @@
+ //usage:#define echo_trivial_usage
+ //usage:	IF_FEATURE_FANCY_ECHO("[-neE] ") "[ARG]..."
+ //usage:#define echo_full_usage "\n\n"
+-//usage:       "Print ARGs to stdout"
++//usage:       "Print ARGs to standard output"
+ //usage:	IF_FEATURE_FANCY_ECHO( "\n"
+ //usage:     "\n	-n	No trailing newline"
+ //usage:     "\n	-e	Interpret backslash escapes (\\t=tab etc)"
