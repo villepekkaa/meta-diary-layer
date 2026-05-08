@@ -59,7 +59,7 @@ Appends:
 - `sudo_%.bbappend` (recipes-extended/sudo)
   - Installs `/etc/sudoers.d/90-wheel` and enables `pam-wheel` for sudo.
 
-## Yocto Project Compatible self-audit (no submission)
+## Yocto Project Compatible self-audit
 
 Reference: https://docs.yoctoproject.org/current/dev-manual/layers.html#making-sure-your-layer-is-compatible-with-yocto-project
 
@@ -68,14 +68,12 @@ Checklist:
 - Layer naming: `meta-diary` follows the `meta-*` convention. (Yes)
 - `LAYERSERIES_COMPAT` set for the claimed release. (Yes: scarthgap)
 - README present and non-empty. (Yes: this file)
-- `yocto-check-layer` run and PASS. (Not run yet)
+- `yocto-check-layer` run and PASS. (FAIL: layer present in BBLAYERS; remove meta-diary from build/conf/bblayers.conf before running)
 - SECURITY policy present at repo root. (Needs SECURITY.md if this is a standalone repo)
 - Patch files include `Upstream-Status`. (Yes: busybox patch)
 - Layer does not set a machine or distro on inclusion. (Yes)
 
 Notes:
-
-- The compatibility logo is only available to Yocto Project member organizations.
 - Run the checker from your build directory when ready:
 
 ```sh
