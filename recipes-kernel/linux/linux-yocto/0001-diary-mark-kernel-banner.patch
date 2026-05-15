@@ -1,0 +1,26 @@
+From 12a8a54e19238d9bd1e0bb6129981b48e1a66210 Mon Sep 17 00:00:00 2001
+From: villepekkaa <ville-pekka.alavuotunki@proton.me>
+Date: Wed, 13 May 2026 06:50:32 +0000
+Subject: [PATCH] diary: mark kernel banner
+
+Upstream-Status: Inappropriate [course-specific banner]
+
+---
+ init/version.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/init/version.c b/init/version.c
+index f117921811b4..de670501a57e 100644
+--- a/init/version.c
++++ b/init/version.c
+@@ -35,7 +35,8 @@ early_param("hostname", early_hostname);
+ const char linux_proc_banner[] =
+ 	"%s version %s"
+ 	" (" LINUX_COMPILE_BY "@" LINUX_COMPILE_HOST ")"
+-	" (" LINUX_COMPILER ") %s\n";
++	" (" LINUX_COMPILER ") %s"
++	" diary-build\n";
+ 
+ BUILD_SALT;
+ BUILD_LTO_INFO;
+
