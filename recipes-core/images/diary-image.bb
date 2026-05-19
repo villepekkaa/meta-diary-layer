@@ -32,6 +32,7 @@ EXTRA_USERS_PARAMS = "\
 
 IMAGE_INSTALL:append = " sudo"
 IMAGE_INSTALL:append = " heartbeat"
+IMAGE_INSTALL:append = " diary-char"
 
 
 
