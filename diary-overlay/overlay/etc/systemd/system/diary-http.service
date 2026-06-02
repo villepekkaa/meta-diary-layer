@@ -1,0 +1,13 @@
+[Unit]
+Description=Simple Python HTTP server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m http.server 80
+WorkingDirectory=/var/www
+User=root
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
